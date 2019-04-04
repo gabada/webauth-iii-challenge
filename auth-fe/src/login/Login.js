@@ -10,6 +10,7 @@ class Login extends React.Component {
     return (
       <>
         <h1>Login</h1>
+        {this.props.loginMessage && <h2>{this.props.loginMessage}</h2>}
         <form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor='username'>
